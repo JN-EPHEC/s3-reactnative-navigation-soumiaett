@@ -1,10 +1,10 @@
-import { Drawer } from "expo-router/drawer";
+import { Stack } from "expo-router";
 
-export default function DrawerLayout() {
+export default function RootLayout() {
   return (
-    <Drawer>
-      <Drawer.Screen name="courses" options={{ title: "Courses" }} />
-      <Drawer.Screen name="profile" options={{ title: "My Profile" }} />
-    </Drawer>
+    <Stack>
+      {/* Le drawer principal */}
+      <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+    </Stack>
   );
 }

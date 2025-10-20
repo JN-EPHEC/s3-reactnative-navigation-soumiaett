@@ -14,7 +14,7 @@ export default function AllCoursesScreen() {
         data={COURSES}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <Link href={{ pathname: `/courses/${item.id}` } as any} asChild>
+          <Link href={`/courses/${item.id}`} asChild>
             <TouchableOpacity style={styles.card}>
               <Text style={styles.title}>{item.title}</Text>
               <Text>{item.desc}</Text>

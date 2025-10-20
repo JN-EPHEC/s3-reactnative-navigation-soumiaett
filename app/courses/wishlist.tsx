@@ -1,11 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function ProfileScreen() {
+export default function WishlistScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>My Profile</Text>
-      <Text>Name: John Doe</Text>
-      <Text>Email: john@example.com</Text>
+      <Text style={styles.title}>My Wishlist</Text>
+      <Text>Your saved courses will appear here.</Text>
     </View>
   );
 }
